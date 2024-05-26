@@ -31,7 +31,7 @@ const Cart = () => {
             </tbody>
           </table>
         ) : (
-          <h1 className="text-center">Empty</h1>
+          <h1 className="text-center font-bold text-2xl">No Items in Cart</h1>
         )}
       </div>
     </div>

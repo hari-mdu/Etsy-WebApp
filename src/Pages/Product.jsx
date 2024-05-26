@@ -12,7 +12,7 @@ const Product = ({ data }) => {
         quantity: 1,
       })
     );
-    alert("Successfully!");
+    alert("Successfully added to cart!");
   };
   const handleAddtoFav = () => {
     dispatch(addToLikedProducts(data)); // Dispatch addToFavorites action with product data

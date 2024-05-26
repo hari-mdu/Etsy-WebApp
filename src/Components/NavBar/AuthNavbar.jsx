@@ -20,7 +20,7 @@ function CategoryDropdownClose() {
 
 const AuthNavbar = () => {
   return (
-    <nav className="h-18 px-20 bg-white flex align-middle  gap-10 shadow-md">
+    <nav className="h-18 px-20 bg-white flex align-middle  gap-10 shadow-md  fixed top-0 w-full z-10">
         <Link to="/">
           <div className="w-24 h-16 fill-orange-500 flex items-center">
             <svg
