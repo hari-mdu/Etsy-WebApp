@@ -6,19 +6,19 @@ The Etsy WebApp is a web application inspired by the popular e-commerce platform
 
 ## Key Features
 
-**User Authentication**: Users can sign up, log in, and log out securely using Firebase authentication.
-**Browsing Products**: Users can browse through a diverse selection of products, filtered by category, price range, and other attributes.
-**Product Details**: Detailed information about each product is displayed, including name, description, price, and images.
-**Adding to Cart**: Authenticated users can add products to their shopping cart with a single click. The cart is managed using Redux.
-**Checkout Process**: Users can proceed to the checkout page to review their cart contents, enter shipping information, and complete their purchase.
+**User Authentication**: Users can sign up, log in, and log out securely using Firebase authentication.\
+**Browsing Products**: Users can browse through a diverse selection of products, filtered by category, price range, and other attributes.\
+**Product Details**: Detailed information about each product is displayed, including name, description, price, and images.\
+**Adding to Cart**: Authenticated users can add products to their shopping cart with a single click. The cart is managed using Redux.\
+**Checkout Process**: Users can proceed to the checkout page to review their cart contents, enter shipping information, and complete their purchase.\
 **Responsive Design**: The website is fully responsive and optimized for various screen sizes.
 
 ## Technologies Used:
 
-**Frontend**: React.js, Tailwind CSS, React Router DOM
-**State Management**: Redux
-**Backend**: Firebase (Database, Authentication)
-**Deployment**: Netlify
+**Frontend**: React.js, Tailwind CSS, React Router DOM\
+**State Management**: Redux\
+**Backend**: Firebase (Database, Authentication)\
+**Deployment**: Netlify\
 
 ## Screenshots
 
