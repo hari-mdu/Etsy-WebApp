@@ -16,6 +16,7 @@ const App = () => {
     if (storedUser) {
       setUsers(true); // If user is stored, set user to true
     }
+    setUsers(false)
   }, []);
 
   return (
