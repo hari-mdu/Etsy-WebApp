@@ -11,7 +11,7 @@ const LikedProductsPage = () => {
   };
 
   return (
-    <div className="py-5">
+    <div className="py-5 my-[50px]">
       <h1 className="text-4xl mb-5 text-center">Liked Products</h1>
       {likedProducts && likedProducts.length > 0 ? (
         <table className="w-full border-collapse border border-gray-200">

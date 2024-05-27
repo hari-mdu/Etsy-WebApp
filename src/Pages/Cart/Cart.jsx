@@ -6,7 +6,7 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
 
   return (
-    <div className="flex justify-center flex-wrap">
+    <div className="flex justify-center flex-wrap my-[50px]">
       <div className="my-10 w-[800px]">
         {cart?.list && cart?.list?.length > 0 ? (
           <table className="w-full border-collapse border border-gray-200">
@@ -25,7 +25,7 @@ const Cart = () => {
               })}
               <tr className="font-bold">
                 <td colSpan={3}>Total:</td>
-                <td colSpan={1}>{cart?.total}$</td>
+                <td colSpan={1}>Rs.{cart?.total}</td>
                 <td></td>
               </tr>
             </tbody>

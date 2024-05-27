@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       
-      <div className="banner mx-28 my-12 rounded-xl h-[400px] flex gap-60">
+      <div className="banner mx-28 my-12 rounded-xl h-[400px] flex gap-60 mt-[70px]">
         <div className="flex flex-col justify-center hover:cursor-pointer">
           <span className=" w-fit rounded-3xl bg-blue-600 text-white text-xs p-2 my-3">
             Introducing Gift Mode
@@ -16,7 +16,7 @@ const HomePage = () => {
             Extra-special gifting made extra-easy
           </p>
           <a
-            href=""
+            href="/products"
             className=" font-semibold bg-black text-white w-fit p-3 rounded-[26px] tracking-wide my-3"
           >
             Shop now
@@ -24,7 +24,7 @@ const HomePage = () => {
         </div>
         <div className="flex gap-5 overflow-hidden">
           <div className="w-[144px] h-[192px] mb-3 carouselverticalone verticalcolumnone">
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-emerald-700 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Jewellery Lover
@@ -36,7 +36,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-cyan-500 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Knitter
@@ -48,7 +48,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-amber-400 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Dog Lover
@@ -60,7 +60,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-orange-400 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Cat Lover
@@ -72,7 +72,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-lime-400 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Music Lover
@@ -87,7 +87,7 @@ const HomePage = () => {
           </div>
 
           <div className="w-[144px] h-[192px] mb-3 carouselverticaltwo verticalcolumntwo">
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-amber-400 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Bird Watcher
@@ -99,7 +99,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-lime-400 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Host
@@ -111,7 +111,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-cyan-500 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Mixologist
@@ -123,7 +123,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-emerald-700 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Pickleball Player
@@ -135,7 +135,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-orange-400 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Beauty Guru
@@ -149,7 +149,7 @@ const HomePage = () => {
             </a>
           </div>
           <div className="w-[144px] h-[192px] mb-3 carouselverticalone verticalcolumnone">
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-orange-400 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Maximalist
@@ -161,7 +161,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-cyan-500 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Toddler
@@ -173,7 +173,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px]  bg-lime-400 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Newlywed
@@ -185,7 +185,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px]   bg-amber-400 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Globetrotter
@@ -197,7 +197,7 @@ const HomePage = () => {
                 />
               </div>
             </a>
-            <a href="">
+            <a href="/products">
               <div className="mb-[8px] p-[12px] bg-emerald-700 rounded-[16px] tracking-[.08px] text-[16px] font-semibold">
                 <p>
                   The <br /> Pisces
@@ -219,7 +219,7 @@ const HomePage = () => {
         </h3>
         <div className="flex gap-10 py-10">
           <div className="">
-            <a href="">
+            <a href="/products">
               <img
                 className=" rounded-full"
                 src="https://i.etsystatic.com/ij/800c54/5981356668/ij_300x300.5981356668_biswxvgg.jpg?version=0"
@@ -229,7 +229,7 @@ const HomePage = () => {
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="/products">
               <img
                 className=" rounded-full"
                 src="https://i.etsystatic.com/22881962/r/il/197d79/2691663280/il_300x300.2691663280_dwfk.jpg"
@@ -239,7 +239,7 @@ const HomePage = () => {
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="/products">
               <img
                 className=" rounded-full"
                 src="https://i.etsystatic.com/6748817/c/2000/2000/0/554/il/56460b/2797375167/il_300x300.2797375167_iqqg.jpg"
@@ -251,7 +251,7 @@ const HomePage = () => {
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="/products">
               <img
                 className=" rounded-full"
                 src="https://i.etsystatic.com/6748817/r/il/3f8f04/2462639893/il_300x300.2462639893_jtmq.jpg"
@@ -263,7 +263,7 @@ const HomePage = () => {
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="/products">
               <img
                 className=" rounded-full"
                 src="https://i.etsystatic.com/15777598/r/il/8dc8bc/2240530050/il_300x300.2240530050_4zyb.jpg"
@@ -273,7 +273,7 @@ const HomePage = () => {
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="/products">
               <img
                 className=" rounded-full"
                 src="https://i.etsystatic.com/13722199/r/il/291260/5559365546/il_300x300.5559365546_ru1a.jpg"
