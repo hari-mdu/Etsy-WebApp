@@ -5,22 +5,25 @@ import { FaRegHeart } from 'react-icons/fa';
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { navLinks } from '../../utils/constants';
-import SignIn from '../../Pages/SignIn/SignIn';
+
 
 export const NavBar = ({setUsers}) => {
 
+  // Function to open the category dropdown
   function CategoryDropdownOpen() {
     const catDrop = document.getElementById('categories');
     catDrop.classList.remove('hidden');
     catDrop.classList.add('visible');
   }
   
+  // Function to close the category dropdown
   function CategoryDropdownClose() {
     const catDrop = document.getElementById('categories');
     catDrop.classList.remove('visible');
     catDrop.classList.add('hidden');
   }
 
+  // Function to handle logout
   const Logout= (e) =>{
     e.preventDefault();
     setUsers(false);

@@ -4,6 +4,7 @@ import {db} from '../../firebase'
 
 
 export const Register = () => {
+   // State to manage user data
   const [userData, setUserData] = useState({
     name: "",
     email: "",
@@ -11,17 +12,20 @@ export const Register = () => {
   });
 
   
-
+// Handle input change
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUserData({ ...userData, [name]: value });
   };
 
+  // Add user to Firestore database
   const addUser = async () => {
     try {
+      // Add user document to 'user' collection in Firestore
       const docRef = await addDoc(collection(db, "user"), {
         user: userData,
       });
+      // Display success toast if user added successfully
       toast.success("User registered successfully", {
         position: "top-right",
         autoClose: 5000,
@@ -33,6 +37,7 @@ export const Register = () => {
         theme: "light",
       });
     } catch (error) {
+      // Display error toast if user registration fails
       toast.error("Error in registering the user", {
         position: "top-right",
         autoClose: 5000,
@@ -47,10 +52,12 @@ export const Register = () => {
     }
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    addUser();
+    addUser();// Call addUser function to register user
 
+    // Reset form fields after submission
     setUserData({
       name: "",
       email: "",

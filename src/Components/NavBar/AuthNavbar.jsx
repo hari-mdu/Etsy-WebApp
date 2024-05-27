@@ -6,12 +6,14 @@ import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { navLinks } from "../../utils/constants";
 
+// Function to open the category dropdown
 function CategoryDropdownOpen() {
   const catDrop = document.getElementById("categories");
   catDrop.classList.remove("hidden");
   catDrop.classList.add("visible")
 }
 
+// Function to close the category dropdown
 function CategoryDropdownClose() {
   const catDrop = document.getElementById("categories");
   catDrop.classList.remove("visible");

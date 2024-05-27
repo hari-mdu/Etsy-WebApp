@@ -3,31 +3,42 @@ import '../Accordion/Accordion.css'
 
 
 const Accordion = () => {
+    // State to track the selected item (index)
     const [selected, setSelected] = useState(null);
 
-    const toggle = (i) =>{
-        if (selected === i){
-            return setSelected(null)
+    // Function to toggle selected item
+    const toggle = (i) => {
+        // If the clicked item is already selected, deselect it
+        if (selected === i) {
+            return setSelected(null);
         }
-
-        setSelected(i)
+        // Otherwise, select the clicked item
+        setSelected(i);
     }
 
     return (
         <div className='wrapper'>
             <div className='accordion pb-10'>
-                {data.map((item, i)=> (<div className='item' >
-                    <div className='title' onClick={()=> toggle(i)}>
-                        <h2 className='py-2'>{item.question}</h2>
-                        <span>{selected === i ? '-' : '+'}</span>
+                {/* Map through the data array and render each item */}
+                {data.map((item, i) => (
+                    <div className='item' key={i}>
+                        {/* Title section with click event to toggle selection */}
+                        <div className='title' onClick={() => toggle(i)}>
+                            <h2 className='py-2'>{item.question}</h2>
+                            {/* Conditional rendering for the toggle icon */}
+                            <span>{selected === i ? '-' : '+'}</span>
+                        </div>
+                        {/* Content section with conditional class for display */}
+                        <div className={selected === i ? 'content-show' : 'content'}>{item.answer}</div>
                     </div>
-                    <div className={selected === i ? 'content-show' : 'content'}>{item.answer}</div>
-                </div>))}
+                ))}
             </div>
         </div>
     )
 }
 
+
+// Data array containing questions and answers
 const data = [
     {
         question: "Why choose Etsy?",

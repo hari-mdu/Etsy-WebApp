@@ -5,15 +5,19 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 const Login = ({setUsers}) => {
+  // State to manage form inputs
   const [userData, setUserData] = useState({
     email: "",
     password: "",
   });
 
+  // State to store all users fetched from Firestore
   const [user, setUser] = useState([]);
 
+  // React Router hook for navigation
   const navigate = useNavigate();
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(userData);
@@ -25,6 +29,7 @@ const Login = ({setUsers}) => {
     setUserData({ ...userData, [name]: value });
   };
 
+  // Fetch all users from Firestore
   const getAllUsers = async () => {
     const q = query(collection(db, "user"));
     const users = onSnapshot(q, (querySnapshot) => {
@@ -37,11 +42,13 @@ const Login = ({setUsers}) => {
     });
   };
 
+    // Check user credentials
   const checkUserCredentials = async () => {
     await getAllUsers(); // Wait for getAllUsers to complete
   
     let foundUser = null; // Variable to store found user
   
+    // Iterate through all users fetched from Firestore
     for (let i = 0; i < user.length; i++) {
       if (
         user[i].user.email === userData.email &&
@@ -52,6 +59,7 @@ const Login = ({setUsers}) => {
       }
     }
   
+    // If user found, log in and set user data in localStorage
     if (foundUser) {
       toast.success("User logged in successfully", {
         position: "top-right",
@@ -62,8 +70,8 @@ const Login = ({setUsers}) => {
         email : "",
         password : ""
       })
-      setUsers(true);
-      navigate('/');
+      setUsers(true); // Set user status to logged in
+      navigate('/'); // Redirect to home page
     } else {
       toast.error("Invalid Credentials", {
         position: "top-right",
