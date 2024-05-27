@@ -20,6 +20,30 @@ The Etsy WebApp is a web application inspired by the popular e-commerce platform
 **Backend**: Firebase (Database, Authentication)
 **Deployment**: Netlify
 
+## Screenshots
+
+# Home Page
+
+![Homepage](https://github.com/hari-mdu/Etsy-WebApp/assets/124577922/dc3c2cf8-2d5b-40b7-8764-159ff230cafa)
+
+# Products Page
+
+![products page](https://github.com/hari-mdu/Etsy-WebApp/assets/124577922/ab6e0898-3e48-4d4c-94d9-73047b22e2cd)
+
+# Sign In Page
+
+![sigin](https://github.com/hari-mdu/Etsy-WebApp/assets/124577922/c055d337-a324-4bdc-b457-178630075bf6)
+
+# Register Page
+
+![register](https://github.com/hari-mdu/Etsy-WebApp/assets/124577922/e6f7a79f-ede8-4e91-ac2c-117acae1c60e)
+
+# Footer
+
+![footer](https://github.com/hari-mdu/Etsy-WebApp/assets/124577922/73979103-48b7-42cf-8952-06dcc84b1ff1)
+
+
+
 ## Setup Instructions:
 
 To install and run the Etsy WebApp application locally, follow these steps:
